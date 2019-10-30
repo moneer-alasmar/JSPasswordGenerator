@@ -33,6 +33,22 @@ generateEl.addEventListener("click", () => {
 });
 
 // Generate Password Function
+function generatePassword(lower, upper, number, symbol, length) {
+  // 1. Initialize password variable
+  // 2. Filter out unchecked types
+  // 3. Loop over the length call generator function for each type
+  // 4. Add final password to PW variable and return
+
+  let generatedPassword = "";
+
+  const typesCount = lower + upper + number + symbol;
+
+  console.log("typesCount: ", typesCount);
+
+  const typesArr = [{ lower }, { upper }, { number }, { symbol }];
+
+  console.log("typesArr: ", typesArr);
+}
 
 // Generator Functions - http://www.net-comber.com/charset.html
 function getRandomLower() {
